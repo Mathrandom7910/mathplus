@@ -1,0 +1,16 @@
+{
+  "name": "mathplus",
+  "version": "1.0.0",
+  "description": "Some math utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mathrandom7910/pos": "^1.0.2"
+  }
+}
