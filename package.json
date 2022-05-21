@@ -1,5 +1,5 @@
 {
-  "name": "mathplus",
+  "name": "@mathrandom/mathplus",
   "version": "1.0.0",
   "description": "Some math utilities",
   "main": "index.js",
