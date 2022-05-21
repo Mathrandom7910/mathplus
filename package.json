@@ -12,5 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "@mathrandom7910/pos": "^1.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mathrandom7910/mathplus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mathrandom7910/mathplus/issues"
+  },
+  "homepage": "https://github.com/Mathrandom7910/mathplus#readme"
 }
