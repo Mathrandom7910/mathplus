@@ -1,5 +1,5 @@
 const { Pos } = require("@mathrandom7910/pos");
-const MathPlus = require("./src/index");
+const MathPlus = require("@mathrandom7910/mathplus");
 
 console.log("direction:", 
 MathPlus.getDir(new Pos(1, 0), new Pos(0, 0)), 
