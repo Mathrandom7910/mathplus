@@ -22,9 +22,9 @@ export function getDistance(x: number, y: number, x1: number, y1: number): numbe
 
 export function getDistance(pos: PrimitivePos | number, pos1: PrimitivePos | number, x1?: number, y1?: number) {
     if(pos instanceof PrimitivePos && pos1 instanceof PrimitivePos) {
-        return Math.hypot(pos.x, pos.y, pos1.x, pos1.y);
+        return Math.hypot(pos.x - pos1.x, pos.y - pos1.y);
     } else if(typeof pos == "number" && typeof pos1 == "number" && x1 != undefined && y1 != undefined){
-        return Math.hypot(pos, pos1, x1, y1);
+        return Math.hypot(pos - x1, pos1 - y1);
     } else {
         throw new Error(`Invalid arguments! ${pos} ${pos1} ${x1} ${y1}`);
     }

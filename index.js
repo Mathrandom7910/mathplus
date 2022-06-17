@@ -5,10 +5,10 @@ const pos_1 = require("@mathrandom7910/pos");
 const pi = Math.PI;
 function getDistance(pos, pos1, x1, y1) {
     if (pos instanceof pos_1.PrimitivePos && pos1 instanceof pos_1.PrimitivePos) {
-        return Math.hypot(pos.x, pos.y, pos1.x, pos1.y);
+        return Math.hypot(pos.x - pos1.x, pos.y - pos1.y);
     }
     else if (typeof pos == "number" && typeof pos1 == "number" && x1 != undefined && y1 != undefined) {
-        return Math.hypot(pos, pos1, x1, y1);
+        return Math.hypot(pos - x1, pos1 - y1);
     }
     else {
         throw new Error(`Invalid arguments! ${pos} ${pos1} ${x1} ${y1}`);
